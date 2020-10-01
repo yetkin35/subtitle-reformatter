@@ -16,7 +16,7 @@ public class main {
 	private static List<String> lines;
 
     public static void main (String [] args) throws IOException{
-        File f = new File("C:\\Users\\YETK›N\\Desktop\\Game of Thrones S08E06-TR.srt");
+        File f = new File("C:\\Users\\YETK√ùN\\Desktop\\Game of Thrones S08E06-TR.srt");
         lines = Files.readAllLines(f.toPath(),Charset.defaultCharset());
         changeValueOf(); // the name and the value you want to modify
         Files.write(f.toPath(), changeValueOf(), Charset.defaultCharset());
@@ -29,77 +29,32 @@ public class main {
         	char[] c = line.toCharArray();
 			
 			for(int i = 0; i < line.length();i++){  
-		        if(c[i] == '˝') {
-		        	line = line.replace('˝', 'i');
-		        }else if(c[i] == 'ˆ') {
-		        	line = line.replace('ˆ', 'o');
-		        }else if(c[i] == '÷') {
-		        	line = line.replace('÷', 'O');
-		        }else if(c[i] == '') {
-		        	line = line.replace('', 'g');
-		        }else if(c[i] == 'Á') {
-		        	line = line.replace('Á', 'c');
-		        }else if(c[i] == '«') {
-		        	line = line.replace('«', 'C');
-		        }else if(c[i] == '˛') {
-		        	line = line.replace('˛', 's');
-		        }else if(c[i] == 'ﬁ') {
-		        	line = line.replace('ﬁ', 'S');
-		        }else if(c[i] == '¸') {
-		        	line = line.replace('¸', 'u');
-		        }else if(c[i] == '‹') {
-		        	line = line.replace('‹', 'U');
-		        }else if(c[i] == '›') {
-		        	line = line.replace('›', 'I');
+		        if(c[i] == '√Ω') {
+		        	line = line.replace('√Ω', 'i');
+		        }else if(c[i] == '√∂') {
+		        	line = line.replace('√∂', 'o');
+		        }else if(c[i] == '√ñ') {
+		        	line = line.replace('√ñ', 'O');
+		        }else if(c[i] == '√∞') {
+		        	line = line.replace('√∞', 'g');
+		        }else if(c[i] == '√ß') {
+		        	line = line.replace('√ß', 'c');
+		        }else if(c[i] == '√á') {
+		        	line = line.replace('√á', 'C');
+		        }else if(c[i] == '√æ') {
+		        	line = line.replace('√æ', 's');
+		        }else if(c[i] == '√û') {
+		        	line = line.replace('√û', 'S');
+		        }else if(c[i] == '√º') {
+		        	line = line.replace('√º', 'u');
+		        }else if(c[i] == '√ú') {
+		        	line = line.replace('√ú', 'U');
+		        }else if(c[i] == '√ù') {
+		        	line = line.replace('√ù', 'I');
 		        }
 			}
 			newLines.add(line);
         }
         return newLines;
     }
-	/*public static void main(String args[]) {
-		
-		BufferedReader reader;
-		try {
-			reader = new BufferedReader(new FileReader("C:\\Users\\YETK›N\\Desktop\\sub-file.txt"));
-			String line = reader.readLine();
-			
-			while (line != null) {
-				System.out.println(line);
-				char[] c = line.toCharArray();
-				
-				for(int i = 0; i < line.length();i++){  
-					
-			        if(c[i] == '˝') {
-			        	line.replace('˝', 'i');
-			        }else if(c[i] == 'ˆ') {
-			        	line.replace('ˆ', 'o');
-			        }else if(c[i] == '÷') {
-			        	line.replace('÷', 'O');
-			        }else if(c[i] == '') {
-			        	line.replace('', 'g');
-			        }else if(c[i] == 'Á') {
-			        	line.replace('Á', 'c');
-			        }else if(c[i] == '«') {
-			        	line.replace('«', 'C');
-			        }else if(c[i] == '˛') {
-			        	line.replace('˛', 's');
-			        }else if(c[i] == 'ﬁ') {
-			        	line.replace('ﬁ', 'S');
-			        }else if(c[i] == '¸') {
-			        	line.replace('¸', 'u');
-			        }else if(c[i] == '‹') {
-			        	line.replace('‹', 'U');
-			        }else if(c[i] == '›') {
-			        	line.replace('›', 'I');
-			        }
-				}   
-				
-				line = reader.readLine();	// Read next line
-			}
-			reader.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}*/
 }
