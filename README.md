@@ -1,1 +1,1 @@
-## Reformats input subtitle file
+## Reformat subtitle file
